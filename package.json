@@ -1,0 +1,33 @@
+{
+  "name": "hayproxy",
+  "version": "1.0.0",
+  "description": "Proxy server to handle cors for client first based apps.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RoboMx/hayproxy.git"
+  },
+  "keywords": [
+    "hayproxy",
+    "proxy",
+    "server",
+    "fix",
+    "cors",
+    "client",
+    "first",
+    "apps"
+  ],
+  "author": "RoboMx Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RoboMx/hayproxy/issues"
+  },
+  "homepage": "https://github.com/RoboMx/hayproxy#readme",
+  "dependencies": {
+    "@hapi/hapi": "^18.4.1"
+  }
+}
