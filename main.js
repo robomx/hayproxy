@@ -7,8 +7,15 @@ const axios = require('axios');
 const init = async () => {
 
     const server = Hapi.server({
-        port: 5050,
+        port: 3000,
         host: 'localhost'
+    });
+
+    await server.register({
+        plugin: require('hapi-cors'),
+        options: {
+          origins: ['*']
+        }
     });
 
     server.route({
@@ -16,17 +23,12 @@ const init = async () => {
         path: '/{any*}',
         handler: async (request, h) => {
             const url = request.url.href.replace(request.url.origin, '').substr(1,)
-            console.log(url)
 
             if (request.route.method == 'get') {
-                console.log('dfd')
                 return await axios.get(url)
                     .then(response => {
-                        const data = {
-                            "statusCode": response.status,
-                            "data": response.data
-                        }
-                        return h.response(data).code(500)
+                        const data = response.data
+                        return h.response(data).code(200)
                     }).catch(error => {
                         const data = {
                             "statusCode": 404,
