@@ -1,5 +1,7 @@
 # HAYPROXY
 
+[![HitCount](http://hits.dwyl.com/robomx/hayproxy.svg)](http://hits.dwyl.com/robomx/hayproxy)
+
 A proxy layer to pass CORS errors for client first based apps.
 
 <a href='https://ko-fi.com/Y8Y31LBT4' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi3.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
