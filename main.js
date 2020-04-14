@@ -7,8 +7,8 @@ const axios = require('axios');
 const init = async () => {
 
     const server = Hapi.server({
-        port: 3000,
-        host: 'localhost'
+        port: process.env.OPENSHIFT_NODEJS_PORT || 3000,
+        host: process.env.OPENSHIFT_NODEJS_IP || 'localhost'
     });
 
     await server.register({
