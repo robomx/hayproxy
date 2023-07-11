@@ -29,7 +29,7 @@
   "homepage": "https://github.com/RoboMx/hayproxy#readme",
   "dependencies": {
     "@hapi/hapi": "^18.4.1",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "hapi-cors": "^1.0.3"
   }
 }
